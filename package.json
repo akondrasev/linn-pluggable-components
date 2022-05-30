@@ -1,15 +1,17 @@
 {
-  "name": "placeholder-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "private": true,
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "name": "pluggable-example",
+  "scripts": {
+    "build": "esbuild src/app.ts --bundle --outfile=dist/pluggable-app.js --minify --sourcemap --tree-shaking",
+    "serve": "esbuild src/app.ts --bundle --outfile=dist/pluggable-app.js --minify --serve --sourcemap"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.5",
+    "typescript": "^5.2.2"
+  },
   "dependencies": {
-    "@linnworks/extension-sdk": "^1.2.3",
-    "typescript": "^4.7.2"
+    "@linnworks/entities": "~1.0.15",
+    "@linnworks/extension-sdk": "~2.1.0",
+    "axios": "^1.6.0"
   }
 }
