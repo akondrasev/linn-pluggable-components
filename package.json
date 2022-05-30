@@ -15,5 +15,9 @@
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.9.0"
+  },
+  "dependencies": {
+    "@linnworks/entities": "^1.0.0",
+    "@linnworks/extension-sdk": "^1.2.3"
   }
 }
