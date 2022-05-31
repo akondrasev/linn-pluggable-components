@@ -1,6 +1,7 @@
 import { ModalName } from "@linnworks/extension-sdk";
 import { PermissionsUser } from "@linnworks/entities";
 
+//get registry from global scope, it has to be implemented by linnworks
 const registry = LinnworksApps.appRegistry;
 
 registry.registerPlaceholderItem("user-management-user-list-buttons", {

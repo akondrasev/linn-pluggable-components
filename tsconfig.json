@@ -15,5 +15,7 @@
       "@linnworks/extension-sdk"
     ]
   },
-  "files": ["src/index.ts"]
+  "files": [
+    "src/index.ts"
+  ]
 }
