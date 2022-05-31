@@ -1,6 +1,8 @@
 // Generated using webpack-cli https://github.com/webpack/webpack-cli
 
 const path = require('path');
+const {ModuleFederationPlugin} = require("webpack").container;
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -9,14 +11,27 @@ const config = {
     entry: './src/index.ts',
     output: {
         path: path.resolve(__dirname, 'dist'),
+        publicPath: "auto",
     },
     devServer: {
-        open: true,
-        host: 'localhost',
     },
     plugins: [
-        // Add your plugins here
-        // Learn more about plugins from https://webpack.js.org/configuration/plugins/
+        //standard for all placeholder apps, should be copied as is
+        new ModuleFederationPlugin({
+            name: "PlaceholderApp",
+            filename: "app.js",
+            exposes: {
+                "placeholder": "./src/app"//make sure to create this file "src/app.ts"
+            },
+            shared: {
+                "@linnworks/extension-sdk": {
+                    singleton: true
+                }
+            },
+        }),
+        new HtmlWebpackPlugin({
+            template: "./index.html",
+        }),
     ],
     module: {
         rules: [
