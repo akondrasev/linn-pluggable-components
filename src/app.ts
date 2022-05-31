@@ -15,8 +15,8 @@ const registry = LinnworksApps.appRegistry;
  */
 registry.registerPlaceholderItem("user-management-user-list-buttons", {
     type: "button",
-    icon: "fa fa-cog",
-    text: "Placeholder layer",
+    icon: "fa fa-plus",
+    text: "Example app button",
     onClick(e, placeholder, proxy) {
         const proxyDialog = proxy.openModal<never, PermissionsUser>({
             name: ModalName.ADD_NEW_USER
@@ -31,5 +31,3 @@ registry.registerPlaceholderItem("user-management-user-list-buttons", {
         })
     }
 });
-
-export {}
