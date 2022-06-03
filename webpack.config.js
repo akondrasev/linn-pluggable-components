@@ -14,6 +14,12 @@ const config = {
         publicPath: "auto",
     },
     devServer: {
+        client: {
+            overlay: false,
+            reconnect: false,
+        },
+        hot: false,
+        liveReload: false,
     },
     optimization: {
         runtimeChunk: false
