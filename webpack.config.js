@@ -15,6 +15,9 @@ const config = {
     },
     devServer: {
     },
+    optimization: {
+        runtimeChunk: false
+    },
     plugins: [
         //standard for all placeholder apps, should be copied as is
         new ModuleFederationPlugin({
