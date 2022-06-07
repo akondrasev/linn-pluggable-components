@@ -18,7 +18,7 @@ registry.registerPlaceholderItem("user-management-user-list-buttons", {
     icon: "fa fa-plus",
     text: "Example app button",
     onClick(e, placeholder, proxy) {
-        const proxyDialog = proxy.openModal<never, PermissionsUser>({
+        const proxyDialog = proxy.uiService.openModal<never, PermissionsUser>({
             name: ModalName.ADD_NEW_USER
         });
 
