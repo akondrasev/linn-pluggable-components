@@ -20,6 +20,7 @@ const config = {
         },
         hot: false,
         liveReload: false,
+        webSocketServer: false
     },
     optimization: {
         runtimeChunk: false
