@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@linnworks/entities': ^1.0.0
-  '@linnworks/extension-sdk': ^1.5.1
+  '@linnworks/extension-sdk': ^1.5.2
   html-webpack-plugin: ^5.5.0
   rxjs: ^7.5.5
   ts-loader: ^9.3.0
@@ -13,7 +13,7 @@ specifiers:
 
 dependencies:
   '@linnworks/entities': 1.0.0
-  '@linnworks/extension-sdk': 1.5.1_rxjs@7.5.5
+  '@linnworks/extension-sdk': 1.5.2_rxjs@7.5.5
   html-webpack-plugin: 5.5.0_webpack@5.73.0
   rxjs: 7.5.5
 
@@ -70,8 +70,8 @@ packages:
       tslib: 2.4.0
     dev: false
 
-  /@linnworks/extension-sdk/1.5.1_rxjs@7.5.5:
-    resolution: {integrity: sha512-Mf9Dvg2+4w2tU+sS0aPAe8653JMQBB8a3eFhTfUxelg52AhZaJFlbfTu7D8vica5bMXfphqFwblfLdW7grlRGw==}
+  /@linnworks/extension-sdk/1.5.2_rxjs@7.5.5:
+    resolution: {integrity: sha512-xhIXuRjcpJNI+12jt1Y7/LvvuDGK57+yo9TUSi3D2pAfBfdRwMw+FLMX7ZFjVTgyST9p4pqmRlLQ+gLRSH+flA==}
     engines: {node: '>=16', pnpm: '>=7'}
     peerDependencies:
       rxjs: '>=7'
