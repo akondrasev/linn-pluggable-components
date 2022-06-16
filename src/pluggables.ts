@@ -22,8 +22,7 @@ registry.registerPlaceholderItem("user-management-user-list-buttons", {
             console.log(_);
         });
 
-
-        /*const proxyDialog = proxy.uiService.openModal<never, PermissionsUser>({
+        const proxyDialog = proxy.uiService.openModal({
             name: ModalName.ADD_NEW_USER
         });
 
@@ -33,6 +32,6 @@ registry.registerPlaceholderItem("user-management-user-list-buttons", {
 
         proxyDialog.afterClosed.then(_ => {
             console.log(_);
-        });*/
+        });
     }
 });
