@@ -5,7 +5,7 @@ registry.registerPlaceholderItem("user-management-user-list-buttons", {
     icon: "fa fa-plus",
     text: "Example app button",
     onClick(e, placeholder, proxy) {
-        //TODO missing access to session in proxy
+        console.log(proxy.uiService.session);
 
         proxy.uiService.getSelectedPageDataItems().then(_ => {
             console.log(_);

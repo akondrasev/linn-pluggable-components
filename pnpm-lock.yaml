@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@linnworks/entities':
-    specifier: ~1.0.15
-    version: 1.0.15
+    specifier: ~1.0.17
+    version: 1.0.17
   '@linnworks/extension-sdk':
     specifier: ~2.1.0
-    version: 2.1.0(@linnworks/entities@1.0.15)
+    version: 2.1.0(@linnworks/entities@1.0.17)
   axios:
     specifier: ^1.6.0
     version: 1.6.0
@@ -223,17 +223,17 @@ packages:
     dev: true
     optional: true
 
-  /@linnworks/entities@1.0.15:
-    resolution: {integrity: sha512-C3r+zcb2Katk9ztrOb/uystoqcz/kwjtNNXcY14WWhAltPFyfqeqqDPZ7wZZi631Hr754x1QlRTkWekTXqqPIA==}
+  /@linnworks/entities@1.0.17:
+    resolution: {integrity: sha512-dDyTkzHucs2dcP/n1IHIxJDiY+VPH62IIfl211O6snN3h9b4Q2kGYJ1bwd6ht/ibqQQTb1K0FafvCxFRybJo+w==}
     dev: false
 
-  /@linnworks/extension-sdk@2.1.0(@linnworks/entities@1.0.15):
+  /@linnworks/extension-sdk@2.1.0(@linnworks/entities@1.0.17):
     resolution: {integrity: sha512-ovxLnBgGz9tPTv69nslaDovVraqij3A+KhQZG9Vj79/nBcIVgTW+t/a66S13/EihjVAS2MaCMFCGvCznvzLgow==}
     engines: {node: '>=16', pnpm: '>=8'}
     peerDependencies:
       '@linnworks/entities': ^1.0.14
     dependencies:
-      '@linnworks/entities': 1.0.15
+      '@linnworks/entities': 1.0.17
     dev: false
 
   /asynckit@0.4.0:

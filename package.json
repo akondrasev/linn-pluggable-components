@@ -10,7 +10,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@linnworks/entities": "~1.0.15",
+    "@linnworks/entities": "~1.0.17",
     "@linnworks/extension-sdk": "~2.1.0",
     "axios": "^1.6.0"
   }
