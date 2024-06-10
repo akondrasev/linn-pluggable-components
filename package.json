@@ -10,7 +10,7 @@
     "typescript": "^5.4.2"
   },
   "dependencies": {
-    "@linnworks/entities": "~2.0.0-extensible-views.3",
-    "@linnworks/extension-sdk": "~3.0.0-extensible-views.2"
+    "@linnworks/entities": "~2.0.1",
+    "@linnworks/extension-sdk": "~3.0.0"
   }
 }
