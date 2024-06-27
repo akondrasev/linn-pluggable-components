@@ -6,11 +6,11 @@
     "serve": "esbuild src/app.ts --bundle --outfile=dist/pluggable-app.js --minify --serve --sourcemap"
   },
   "devDependencies": {
-    "esbuild": "^0.19.5",
-    "typescript": "^5.4.2"
+    "esbuild": "^0.21.5",
+    "typescript": "^5.5.2"
   },
   "dependencies": {
-    "@linnworks/entities": "~2.0.1",
-    "@linnworks/extension-sdk": "~3.0.0"
+    "@linnworks/types": "~1.0.0",
+    "@linnworks/extension-sdk": "~3.1.0"
   }
 }
