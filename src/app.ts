@@ -18,9 +18,10 @@ const registry = LinnworksApps.appRegistry;
     onClick(e, placeholder, proxy) {
       console.log(proxy.uiService.viewState);
 
-      // proxy.uiService.openModal({
-      //     name: "ADD_NEW_USER"
-      // })
+      proxy.uiService.openExtensionDialog("DIALOG_REF", {
+        dialogTitle: "ttttt",
+        dialogActions: []
+      });
     },
     place: 'toolbar-buttons'
   });
@@ -90,11 +91,24 @@ const registry = LinnworksApps.appRegistry;
   })
 }
 
+{
+  let viewOrder = registry.view("view-order");
+
+  viewOrder.addButton({
+    text: "Open something interesting",
+    place: "toolbar-buttons",
+    icon: "fa fa-cog",
+    onClick(...{2: layer}) {
+      console.log("view order", layer.uiService.context);
+    }
+  });
+}
+
 //
-// registry.registerExternalDialog({
-//     dialogUrl: "http://localhost:8080/",
-//     name: "DIALOG_REF"
-// });
+registry.registerExternalDialog({
+    dialogUrl: "http://localhost:8080/",
+    name: "DIALOG_REF"
+});
 //
 // registry.registerExternalUi({
 //     applicationUrl: "https://dashboard.xsellco.com/linnworks/auth/[{TOKEN}]",

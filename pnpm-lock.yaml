@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@linnworks/extension-sdk':
         specifier: ~3.1.0
-        version: 3.1.0(@linnworks/types@1.0.0)
+        version: 3.1.0(@linnworks/types@1.0.1)
       '@linnworks/types':
-        specifier: ~1.0.0
-        version: 1.0.0
+        specifier: ~1.0.1
+        version: 1.0.1
     devDependencies:
       esbuild:
         specifier: ^0.21.5
@@ -168,8 +168,8 @@ packages:
     peerDependencies:
       '@linnworks/types': ^1.0.0
 
-  '@linnworks/types@1.0.0':
-    resolution: {integrity: sha512-H2LkxLTAq1hso+d1TuEPlecU2a5DV+H+rBhuFYyCGpI1/gzzwUU2s0frg5swW7C2/S/HXBTN5QnWjpYy/TW9OA==}
+  '@linnworks/types@1.0.1':
+    resolution: {integrity: sha512-8gErfPtIJ/oec8VWCwLg/E2xxBXXykm2QIImgVh8ENFXpeJAx4WduP/0svSxECiwJL6DczZ8HbKK5Cx4gN/OVQ==}
     engines: {node: '>=16', pnpm: '>=8'}
 
   esbuild@0.21.5:
@@ -253,11 +253,11 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
-  '@linnworks/extension-sdk@3.1.0(@linnworks/types@1.0.0)':
+  '@linnworks/extension-sdk@3.1.0(@linnworks/types@1.0.1)':
     dependencies:
-      '@linnworks/types': 1.0.0
+      '@linnworks/types': 1.0.1
 
-  '@linnworks/types@1.0.0': {}
+  '@linnworks/types@1.0.1': {}
 
   esbuild@0.21.5:
     optionalDependencies:

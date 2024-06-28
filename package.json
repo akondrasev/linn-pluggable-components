@@ -10,7 +10,7 @@
     "typescript": "^5.5.2"
   },
   "dependencies": {
-    "@linnworks/types": "~1.0.0",
+    "@linnworks/types": "~1.0.1",
     "@linnworks/extension-sdk": "~3.1.0"
   }
 }
