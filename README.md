@@ -41,7 +41,7 @@ pnpm add -g pnpm
 Install linnworks packages dedicated to support extensions developers with strictly defined interfaces:
    
  ```
-pnpm add @linnworks/extension-sdk @linnworks/entities
+pnpm add @linnworks/extension-sdk @linnworks/types
 pnpm add typescript esbuild -D
    ```
 
