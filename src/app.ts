@@ -17,11 +17,6 @@ const registry = LinnworksApps.appRegistry;
     icon: "fa fa-print",
     onClick(e, placeholder, proxy) {
       console.log(proxy.uiService.viewState);
-
-      proxy.uiService.openExtensionDialog("DIALOG_REF", {
-        dialogTitle: "ttttt",
-        dialogActions: []
-      });
     },
     place: 'toolbar-buttons'
   });
@@ -105,10 +100,10 @@ const registry = LinnworksApps.appRegistry;
 }
 
 //
-registry.registerExternalDialog({
-    dialogUrl: "http://localhost:8080/",
-    name: "DIALOG_REF"
-});
+// registry.registerExternalDialog({
+//     dialogUrl: "http://localhost:8080/",
+//     name: "DIALOG_REF"
+// });
 //
 // registry.registerExternalUi({
 //     applicationUrl: "https://dashboard.xsellco.com/linnworks/auth/[{TOKEN}]",
