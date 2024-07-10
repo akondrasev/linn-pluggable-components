@@ -6,7 +6,7 @@ pnpm run build
 
 To serve a file during local development:
 ```
-pnpm run serve
+pnpm run http-server
 ```
 
 To test local application with linnworks:
@@ -23,12 +23,7 @@ You have to publish dist/pluggable-app.js file somewhere on https server, so it 
 # Steps to create a placeholder app:
 
 ## Prerequisites:
-* Make sure you are using our appgate to access https://npm.linnworks.com
-* Create .npmrc file with registry setup:
 * Install pnpm for maximum compatibility with our libraries
-   ```
-  @linnworks:registry=https://npm.linnworks.com
-  ```
 
 Install pnpm https://pnpm.io/_
 
