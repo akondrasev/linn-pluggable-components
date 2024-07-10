@@ -3,7 +3,8 @@
   "name": "pluggable-example",
   "scripts": {
     "build": "esbuild src/app.ts --bundle --outfile=dist/pluggable-app.js --minify --sourcemap --tree-shaking",
-    "serve": "esbuild src/app.ts --bundle --outfile=dist/pluggable-app.js --minify --serve --sourcemap"
+    "serve": "esbuild src/app.ts --bundle --outfile=dist/pluggable-app.js --minify --serve --sourcemap",
+    "http-server": "pnpm run build && cd dist/ && npx http-server -p 8000 --cors"
   },
   "devDependencies": {
     "esbuild": "^0.21.5",
